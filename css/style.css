@@ -14,7 +14,7 @@ body{
 a {
     letter-spacing: .5px;
     color: white;
-    font-size: 16px;
+    font-size: 1.2vw;
     transition: color .1s ease-in-out;
     
 
@@ -24,6 +24,25 @@ a {
     color: white;
 }
 
+.logo h1{
+    font-size: 2vw;
+}
+
+@media (max-width: 768px){
+    .logo h1{
+        font-size: 4vw;
+    }
+
+    #titular{
+        font-size: 5vw;
+    }
+
+    #sub-titular{
+        font-size: 1vw;
+    }
+
+}
+
 .menu{
     justify-content: space-between;
 }
@@ -31,6 +50,16 @@ a {
 .container{
 max-width: 1220px;
 margin: 0 auto;
+padding: 16px;
+}
+
+@media (max-width: 375px){
+    .container{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
 }
 
 #section1{
@@ -87,8 +116,8 @@ margin: 0 auto;
 
 #titular{
     color: white;
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 6vw;
+    line-height: 6vw;
     margin-bottom: 40px;
 }
 
@@ -99,7 +128,7 @@ margin: 0 auto;
 #sub-titular{
     color: white;
     display: block;
-    font-size: 1.5em;
+    font-size: 2vw;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -111,7 +140,7 @@ margin: 0 auto;
 .fondo{
     height: 637px;
     background-image: url(../img/fondo3.0.svg);
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 .caja-proyecto1{
@@ -133,7 +162,10 @@ margin: 0 auto;
 .bg-1{
     background: url(../img/spoty.svg);
     background-size: cover;
-    transform: scale(1)
+    transform: scale(1);
+    background-position: center;
+    
+    
     
 }
 
@@ -144,7 +176,9 @@ margin: 0 auto;
 .bg-2{
     background: url(../img/pillup.svg);
     background-size: cover; 
-    transform: scale(1)
+    transform: scale(1);
+    background-position: center;
+
 }
 
 .bg-2:hover{
@@ -154,7 +188,9 @@ margin: 0 auto;
 .bg-3{
     background: url(../img/news.svg);
     background-size: cover;
-    transform: scale(1)
+    transform: scale(1);
+    background-position: center;
+
 }
 
 .bg-3:hover{
@@ -164,7 +200,9 @@ margin: 0 auto;
 .bg-4{
     background: url(../img/cooming.svg);
     background-size: cover;
-    transform: scale(1)
+    transform: scale(1);
+    background-position: center;
+
 }
 
 .bg-4:hover{
@@ -197,16 +235,28 @@ margin: 0 auto;
     max-width: 1140px;
     margin-top: 100px;
     display: grid;
-    grid-template: repeat(2, auto) / repeat(2, 520px);
+    grid-template: repeat(2, auto) / repeat(2, calc(50% - 25px));
     /* flex-direction: row; */
     justify-content: space-between;
-    grid-gap: 100px;
+    grid-gap: 50px;
     /* flex-wrap: wrap-reverse; */
+}
+
+@media (max-width:376px){
+    #section3{
+   
+    width:100%;
+    display: grid;
+    grid-template: repeat(4, auto) / repeat(1, calc(50% - 25px));
+    /* flex-direction: row; */
+    justify-content: center;
+    
+    }
 }
 
 .titulo2{
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 400;
 }
 
@@ -214,7 +264,7 @@ margin: 0 auto;
     text-align: center;
     align-items: center;
     color: #077CE1;
-    font-size: 100px;
+    
     background: white;
     padding: 32px 90px;
     border-radius: 10px;
@@ -230,24 +280,22 @@ margin: 0 auto;
     
 
 #titulo3{
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: 400;
     margin-top: 80px;
-    /* max-width: 1220px; */
 }
 
 #titulo4{
-    font-size: 20px;
-    /* width: 50vw; */
+    font-size: 1.5vw;
     text-align: justify;
     font-weight:300;
-    line-height: 40px;
+    line-height: 2.6vw;
     margin-bottom: 100px;
 
 
 }
 
-#section4{
+#section4{  
     max-width: 1140px;
     margin-top: 200px;
     display: flex;
@@ -299,7 +347,7 @@ margin: 0 auto;
 }
 
 #footer-icon-m a{
-    font-size: 20px;
+    font-size: 1.6vw;
 }
 
 #footer-icon-m a:hover {
@@ -307,7 +355,7 @@ margin: 0 auto;
 }
 
 #footer-icon-l a{
-    font-size: 20px;
+    font-size: 1.6vw;
     margin-left: 20px
 }
 
@@ -316,7 +364,7 @@ margin: 0 auto;
 }
 
 #footer-mail a{
-    font-size: 20px;
+    font-size: 1.2vw;
     text-decoration-line: none;
     font-weight: 300;
 }
@@ -344,6 +392,31 @@ margin: 0 auto;
 
 .parrafo-info{
     margin-top: 20px;
+
+}
+
+@media (max-width: 768px){
+    .logo h1{
+        font-size: 3vw;
+    }
+
+    .fondo {
+        height: 400px;
+    }
+
+    #section1 {
+        margin-top: 0px;
+    }
+
+    #titular{
+        font-size: 5vw;
+        margin-bottom: 1px;
+        margin-top:
+    }
+
+    #sub-titular{
+        font-size: 2.5vw;
+    }
 
 }
 
