@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="614px" height="475px" viewBox="0 0 614 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#1C1C1C" x="0" y="0" width="614" height="475"></rect>
+        <text id="NewsClub" font-family="Georgia" font-size="60" font-weight="normal" letter-spacing="-1.25">
+            <tspan x="178" y="257" fill="#666666">News</tspan>
+            <tspan x="318.195312" y="257" font-family="Roboto-Bold, Roboto" font-weight="bold" fill="#FFFFFF">Club</tspan>
+        </text>
+    </g>
+</svg>
